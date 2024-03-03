@@ -31,8 +31,11 @@ const factorial = function(number) {
 let numA;
 let operator;
 let numB;
+let display = document.querySelector('.result');
+display.textContent = "69";
 
 function operate(numA, operator, numB) {
+  // Runs when equal sign is pressed.
   if (operator === "add") {
     return add(numA, numB);
   } else if (operator == "subtract") {
@@ -43,3 +46,15 @@ function operate(numA, operator, numB) {
     return divide(numA, numB);
   }
 }
+
+const numbers = document.querySelectorAll('.numbers');
+numbers.forEach(number => {
+  number.addEventListener('click', () => {
+    display.textContent += number.textContent;
+    if (!operatorPressed) {
+      numA = display.textContent;
+    } else {
+      numB = display.textContent;
+    }
+  })
+})

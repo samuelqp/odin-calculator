@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculator</title>
     <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <div class="calculator">
-      <div class="display">
-        <p class="result">00</p>
+      <div class="display-container">
+        <div class="display">
+          <p class="result">00</p>
+        </div>
+      </div>
+      <div class="clear-container">
+        <div class="clear-box">
+          <button id="clear">C</button>
+        </div>
       </div>
       <div class="buttons">
         <div class="number-grid">
-          <button id="one">1</button>
-          <button id="two">2</button>
-          <button id="three">3</button>
-          <button id="four">4</button>
-          <button id="five">5</button>
-          <button id="six">6</button>
-          <button id="seven">7</button>
-          <button id="eight">8</button>
-          <button id="nine">9</button>
-          <button id="0">0</button>
+          <button class="numbers" id="one">1</button>
+          <button class="numbers" id="two">2</button>
+          <button class="numbers" id="three">3</button>
+          <button class="numbers" id="four">4</button>
+          <button class="numbers" id="five">5</button>
+          <button class="numbers" id="six">6</button>
+          <button class="numbers" id="seven">7</button>
+          <button class="numbers" id="eight">8</button>
+          <button class="numbers" id="nine">9</button>
+          <button class="numbers" id="0">0</button>
           <button id="point">.</button>
           <button id="equal">=</button>
         </div>

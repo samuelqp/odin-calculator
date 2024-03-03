@@ -9,31 +9,70 @@ html, body {
 
 .calculator {
   border: 1px solid black;
+  border-radius: 2%;
+  padding: 5px;
   background-color: lightgrey;
-  height: 50vh;
-  width: 25vw;
+  height: 40vh;
+  width: 20vw;
   min-width: 300px;
-  min-height: 490px;
+  min-height: 525px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap: 15px;
+  gap: 0;
+}
+
+.display-container {
+  flex-shrink: 1;
+  max-height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .display {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex: 1;
   background-color: black;
   color: white;
-  font-size: 55px; 
-  height: 30%;
-  width: 100%;
+  font-size: 100px; 
+  font-family: 'Seven Segment', sans-serif;
+  text-align: right;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: darkgrey 0px -3px 3px 3px inset;
+  overflow: hidden;
 }
 
 .result {
+  height: 1em;
   margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.clear-box {
+  flex: 1;
+  display: flex;
+  max-width: 25%;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#clear {
+  flex: 1;
+  background-color: #B20D08;
+  font-size: 25px;
+  font-weight: 900;
+  overflow: hidden;
 }
 
 .buttons {
@@ -49,6 +88,7 @@ button {
   border-radius: 15px;
   flex-shrink: 1;
   margin: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .number-grid {
@@ -64,7 +104,7 @@ button {
 .number-grid > button {
   padding: 0;
   flex: 1;
-  min-width: 30%;
+  min-width: 25%;
 }
 
 .operators {
@@ -81,5 +121,5 @@ button {
 .operators > button {
   padding: 0;
   flex: 1;
-  min-width: 30%;
+  min-width: 25%;
 }
