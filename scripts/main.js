@@ -107,7 +107,11 @@ const equalButton = document.querySelector('#equal');
 
 function evaluate() {
   numA = operate(numA, operator, numB) // numA becomes answer to prepare for chain ops
-  display.textContent = numA;
+  if (numA == 'Infinity') {
+    display.textContent = "Dont try"
+  } else {
+    display.textContent = numA;
+  }
   operatorOff();
 }
 
