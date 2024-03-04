@@ -1,6 +1,7 @@
 html, body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   height: 100vh;
@@ -70,7 +71,7 @@ html, body {
 #credit {
   margin: auto 0 auto 20px;
   font-size: 25px;
-  font-family: Futura;
+  font-family: Arial;
   background-color: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -136,4 +137,9 @@ button {
   padding: 0;
   flex: 1;
   min-width: 25%;
+}
+
+footer {
+  margin-top: 15vh;
+  margin-bottom: 50px;
 }
