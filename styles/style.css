@@ -84,11 +84,13 @@ html, body {
 }
 
 button {
+  font-family: monospace;
   font-size: 55px;
   border-radius: 15px;
   flex-shrink: 1;
   margin: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #EFEFEF;
 }
 
 .number-grid {
